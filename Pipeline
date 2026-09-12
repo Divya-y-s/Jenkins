@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                sh 'hostname'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Testing...'
+                sh 'ls -lrt
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                sh 'pwd'
             }
         }
     }
