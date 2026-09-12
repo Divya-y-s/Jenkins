@@ -18,3 +18,4 @@ pipeline{
                 echo "This is groovy"
             }
         }
+    }
