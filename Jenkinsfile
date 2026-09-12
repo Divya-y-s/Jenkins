@@ -6,12 +6,14 @@ pipeline{
                 sh 'ls -lrt'
             }
         }
+    }
     stages{
         stage('stage2'){
             steps{
                 sh 'pwd'
             }
         }
+    }
     stages{
         stage('stage3'){
             steps{
@@ -19,3 +21,4 @@ pipeline{
             }
         }
     }
+}
