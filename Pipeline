@@ -1,21 +1,23 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('stage1'){
-            steps{
-                sh 'ls -lrt'
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
             }
         }
 
-    stages{
-        stage('stage2'){
-            steps{
-                sh 'pwd'
+        stage('Test') {
+            steps {
+                echo 'Testing...'
             }
         }
-    stages{
-        stage('stage3'){
-            steps{
-                echo "This is groovy"
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
             }
         }
+    }
+}
